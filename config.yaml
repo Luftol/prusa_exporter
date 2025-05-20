@@ -1,0 +1,11 @@
+name: "Prusa Exporter"
+description: "Exporting Prusa metrics!"
+version: "1.0.0"
+slug: "prusa exporter"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
