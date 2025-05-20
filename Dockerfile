@@ -16,7 +16,10 @@ RUN go build -v -o /prusa_exporter
 FROM alpine:latest
 
 COPY --from=builder /prusa_exporter .
+COPY run.sh .
 
 EXPOSE 10009
 
-ENTRYPOINT ["/prusa_exporter"]
+CMD [ "/run.sh" ]
+
+#ENTRYPOINT ["/prusa_exporter"]
